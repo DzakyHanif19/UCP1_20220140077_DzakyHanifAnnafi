@@ -1,0 +1,193 @@
+/* Global Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2a2a2a;
+    border-bottom: 2px solid #ff007f;
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff007f;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    padding: 30px 0;
+}
+
+#greeting {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff007f;
+}
+
+#datetime {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.5);
+    background-color: #1a1a1a;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px rgb(144, 0, 255); /* Mengubah bayangan saat hover */
+    background-color: #2a2a2a; /* Mengubah warna latar belakang saat hover */
+}
+
+.card-header {
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #ff007f;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff007f;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2a2a2a;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icons a {
+    color: #ff007f;
+    font-size: 24px;
+    margin-right: 10px;
+}
+/* Video Styles */
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    outline: 2px solid #ff007f; /* Menambahkan garis batas */
+    outline-offset: -10px; /* Mengatur jarak antara video dan garis batas */
+}
+
+/* Aturan tambahan untuk menangani perangkat dengan layar sangat kecil, misalnya ponsel */
+@media screen and (max-width: 480px) {
+    .nav-link {
+        padding: 8px 12px; /* Mengurangi padding untuk item navigasi */
+    }
+
+    .home button {
+        padding: 10px 20px; /* Mengurangi padding untuk tombol */
+    }
+
+    .home h1 {
+        font-size: 24px; /* Mengurangi ukuran font untuk judul di halaman utama */
+    }
+
+    .home p {
+        font-size: 16px; /* Mengurangi ukuran font untuk teks di halaman utama */
+    }
+
+    h1 {
+        font-size: 24px; /* Mengurangi ukuran font untuk judul */
+    }
+
+    h2 {
+        font-size: 32px; /* Mengurangi ukuran font untuk sub-judul */
+    }
+
+    h3 {
+        font-size: 24px; /* Mengurangi ukuran font untuk sub-sub-judul */
+    }
+
+    h4,
+    h5 {
+        font-size: 16px; /* Mengurangi ukuran font untuk judul-judul kecil */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Mengurangi ukuran font untuk ikon sosial */
+    }
+}
+
+/* Aturan tambahan untuk menangani perangkat dengan layar sangat kecil, misalnya ponsel */
+@media screen and (max-width: 480px) {
+    .nav-link {
+        padding: 8px 12px; /* Mengurangi padding untuk item navigasi */
+    }
+
+    .home button {
+        padding: 10px 20px; /* Mengurangi padding untuk tombol */
+    }
+
+    .home h1 {
+        font-size: 24px; /* Mengurangi ukuran font untuk judul di halaman utama */
+    }
+
+    .home p {
+        font-size: 16px; /* Mengurangi ukuran font untuk teks di halaman utama */
+    }
+
+    h1 {
+        font-size: 24px; /* Mengurangi ukuran font untuk judul */
+    }
+
+    h2 {
+        font-size: 32px; /* Mengurangi ukuran font untuk sub-judul */
+    }
+
+    h3 {
+        font-size: 24px; /* Mengurangi ukuran font untuk sub-sub-judul */
+    }
+
+    h4,
+    h5 {
+        font-size: 16px; /* Mengurangi ukuran font untuk judul-judul kecil */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Mengurangi ukuran font untuk ikon sosial */
+    }
+}

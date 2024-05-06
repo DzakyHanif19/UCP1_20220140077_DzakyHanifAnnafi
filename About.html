@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Day In My Life Dashboard</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">A Day In My Life</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="service.html">My Fav Song</a>
+            <a class="dropdown-item" href="#">Contact</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">FAQ</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header class="container-fluid mt-3 mb-3">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1 id="greeting"></h1>
+      </div>
+      <div class="col-sm-6 text-right">
+        <p id="datetime"></p>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Isi halaman about -->
+  <div class="container mt-5">
+    <div class="card-header">
+        <h2>THE WEEKND - StarBoy</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="FOTO.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="POTO.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="STARBOY.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-footer">
+        <p>Pengembangan Desain Web - 2024 - kelas B</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/dzakyha_?igsh=MTI3Y2cwNmV6b2xvcg=="><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dzaky-hanif-075474272/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://open.spotify.com/user/31up73un5gt5ulnjk4qeijuz3xki?si=47ef8fca5c074929"><i class="fab fa-spotify"></i></a>
+        </div>
+    </div>
+</footer>
+
+  <!-- JavaScript links dan custom script -->
+   <!-- jQuery, Popper.js, Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+   <script>
+    var circles = document.getElementsByClassName('circle');
+
+    for (var i = 0; i < circles.length; i++) {
+        circles[i].addEventListener('click', function () {
+            this.classList.add('animate');
+            var circle = this;
+            setTimeout(function () {
+                circle.classList.remove('animate');
+            }, 1000);
+        });
+    }
+</script>
+</body>
+</html>
